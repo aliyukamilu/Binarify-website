@@ -1,0 +1,26 @@
+@media(max-width: 767px) {
+  .categories {
+    padding: 20px;
+  }
+
+  .courseCard .courseThumbnail {
+    width: 50px
+  }
+
+  .courseCard .level {
+    font-size: .6em;
+    padding: 2px
+  }
+
+  .courseIcon img {
+    width: 60px;
+  }
+
+  .courseIcon p {
+    font-size: 12px
+  }
+  .courseIcon {
+    padding: 10px;
+    margin-right: 10px;
+  }
+}
