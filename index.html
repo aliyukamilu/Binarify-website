@@ -20,15 +20,31 @@
 <body>
 
   <header class="container-fluid p-4">
-    <div class="d-flex justify-content-between">
+    <div class="d-flex justify-content-between align-items-center">
       <div>
         <img src="./assets/img/logo.png" alt="">
       </div>
-      <div class="d-flex align-items-center linksItem">
-        <a class="linItmem active" href="#">Services</a>
-        <a class="linItmem" href="#">Our Work</a>
-        <a class="linItmem" href="#">About Us</a>
-        <a class="linItmem" href="#">Contact</a>
+
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+
+      <div class="menuAside" id="menuAside">
+        <div class="d-flex flex-column linksItem">
+          <a class="linItmem active" href="#services">Services</a>
+          <a class="linItmem" href="#work">Our Work</a>
+          <a class="linItmem" href="#whybinarify">About Us</a>
+          <a class="linItmem" href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div class="d-flex align-items-center linksItem" id="BigMenu">
+        <a class="linItmem active" href="#services">Services</a>
+        <a class="linItmem" href="#work">Our Work</a>
+        <a class="linItmem" href="#whybinarify">About Us</a>
+        <a class="linItmem" href="#contact">Contact</a>
       </div>
     </div>
   </header>
@@ -42,10 +58,10 @@
               <i class="fab fa-instagram"></i>
             </a>
             <a href="#">
-              <i class="fab fa-youtube"></i>
+              <i class="fab fa-twitter"></i>
             </a>
             <a href="#">
-              <i class="fab fa-tiktok"></i>
+              <i class="fab fa-linkedin"></i>
             </a>
           </div>
           <div class="textPart">
@@ -55,11 +71,11 @@
             <p>We won't just be your developer, we'll also be your
               <br>business partner.
             </p>
-            <button class="btn buttons">Describe your project for us</button>
+            <a href="#contact" class="btn buttons">Describe your project for us</a>
           </div>
         </div>
       </div>
-      <div class="col-md-6 rocketBall">
+      <div class="col-md-6 rocketBall overflow-hidden">
         <img src="./assets/img/ball2.png" class="smallBall" alt="">
         <img src="./assets/img/bannerbg.png" class="rocket" alt="">
         <img src="./assets/img/ball.png" class="bigBall" alt="">
@@ -67,9 +83,9 @@
     </div>
   </section>
 
-  <div style="margin-top: -100px;">
-    <img src="./assets/img/lineseperator.png" alt="">
-    <img src="./assets/img/vector2.png" style="margin-top: -208px;" alt="">
+  <div style="margin-top: -100px; overflow-x: hidden;">
+    <img src="./assets/img/lineseperator.png" class="seperator" alt="">
+    <img src="./assets/img/vector2.png" class="seperator" style="margin-top: -208px;" alt="">
   </div>
 
   <section id="services" class="services">
@@ -81,7 +97,7 @@
 
 
   <section id="work" class="work">
-    <p class="heading">Core Services</p>
+    <p class="heading">Our Work</p>
     <div class="row mt-5">
 
       <div class="col-md-6 position-relative">
@@ -121,16 +137,16 @@
       <div class="col-md-6">
         <div class="projectsLists">
           <div class="projectsInfo" id="sanda">
-            <img src="./assets/img/work1.png" alt="">
-            <p class="workdes mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa ismoilbek netus
-              habitant
-              tempus vitae
-              condimentum vol</p>
+            <img src="./assets/img/hasukiMap.png" alt="">
+            <h1 class="namesPj mt-2 mb-0">Hasuki Map</h1>
+            <p class="workdes mt-4">HasukiMap is a Blockchain NFT project that displays all of the Hasuki NFT holders on
+              a map along with how many NFT each holder currently has. </p>
             <button class="btn btn-outline">View Project</button>
 
           </div>
           <div class="projectsInfo" id="covidapp">
             <img class="mt-4" src="./assets/img/work1.png" alt="">
+            <h1 class="namesP mt-2 mb-0j">Binarify Covid App</h1>
             <p class="workdes mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa ismoilbek netus
               habitant
               tempus vitae
@@ -140,6 +156,7 @@
           </div>
           <div class="projectsInfo" id="gci">
             <img class="mt-4" src="./assets/img/work1.png" alt="">
+            <h1 class="namesPj mt-2 mb-0">GCI Community</h1>
             <p class="workdes mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa ismoilbek netus
               habitant
               tempus vitae
@@ -149,6 +166,7 @@
           </div>
           <div class="projectsInfo" id="itep">
             <img class="mt-4" src="./assets/img/work1.png" alt="">
+            <p class="namesPj mt-2 mb-0">ITEP Learning</p>
             <p class="workdes mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa ismoilbek netus
               habitant
               tempus vitae
@@ -171,7 +189,7 @@
       <div class="worldOfService">
         <img src="./assets/img/world.png" alt="">
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 mb-5">
         <p class="headWhy">Outstanding Development<br>
           Effortless Workflow</p>
         <p class="headWhydes">A 15+ person engineering team <br>works diligently to ensure that all<br> of its customers
@@ -181,26 +199,26 @@
       </div>
 
       <div class="col-md-6">
-        <div class="row">
-          <div class="col-sm-6">
+        <div class="row someDesign">
+          <div class="col-lg-4 col-sm-6">
             <div class="whyBinCard">
               <img src="./assets/img/icons/topNotch.png" class="imgwhhy" alt="">
               <p class="mb-0">Top Notch</p>
             </div>
           </div>
-          <div class="col-sm-6">
+          <div class="col-lg-4 col-sm-6">
             <div class="whyBinCard">
               <img src="./assets/img/icons/inexpensive.png" class="imgwhhy" alt="">
               <p class="mb-0">Inexpensive Price</p>
             </div>
           </div>
-          <div class="col-sm-6">
+          <div class="col-lg-4 col-sm-6">
             <div class="whyBinCard">
               <img src="./assets/img/icons/proCoding.png" class="imgwhhy" alt="">
               <p class="mb-0">Proper Coding</p>
             </div>
           </div>
-          <div class="col-sm-6">
+          <div class="col-lg-4 col-sm-6">
             <div class="whyBinCard">
               <img src="./assets/img/icons/support.png" class="imgwhhy" alt="">
               <p class="mb-0">Helpful Customer <br>Service</p>
@@ -256,7 +274,7 @@
             <div class="lookingForCont">
               <div class="btn-group w-100" role="group" aria-label="Basic radio toggle button group">
                 <input type="radio" class="btn-check" name="priceRadio" id="btncheck4" autocomplete="off">
-                <label class="btn btn-outline-primary" for="btncheck4">$5-15K</label>
+                <label class="btn btn-outline-primary" for="btncheck4">$5K-15K</label>
 
                 <input type="radio" class="btn-check" name="priceRadio" id="btncheck5" autocomplete="off">
                 <label class="btn btn-outline-primary" for="btncheck5">$15-50K</label>
@@ -268,7 +286,7 @@
                 <label class="btn btn-outline-primary" for="btncheck7">$200K</label>
               </div>
             </div>
-            <button class="btn buttons formBtn mt-5">Send Request <i class="fas fa-chevron-right"
+            <button class="btn buttons formBtn mt-5" type="button">Send Request <i class="fas fa-chevron-right"
                 style="margin-left: 20px;"></i></button>
           </form>
           <p></p>
@@ -279,10 +297,11 @@
 
   <footer class="footer-section" id="footer-section">
     <div class="row container-fluid py-5">
-      <div class="col-sm-4">
+      <div class="col-sm-4 mb-5">
         <img src="./assets/img/logo.png">
-        <p class="mt-3 footer-text">Binarify is a software development agency created at UC Berkeley, San Francisco. We
-          are now located in LA.</p>
+        <p class="mt-3 footer-text">Binarify is a software development agency created to work diligently to ensure that
+          all
+          of its customers are satisfied.</p>
 
         <div class="mt-5 d-flex gap-3">
           <a class="socialIcCont" href="#">

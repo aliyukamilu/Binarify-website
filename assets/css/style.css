@@ -69,6 +69,30 @@ body {
   text-align: center;
 }
 
+.hamburger .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--primaryCol);
+}
+
+.menuAside {
+  position: fixed;
+  left: -100%;
+  transition: 0.3s;
+  height: 100%;
+  padding: 20px;
+  overflow-y: scroll;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
 .buttons {
   background: var(--primaryCol);
   color: #fff;
@@ -182,7 +206,10 @@ header {
   width: 100px;
   right: 4%;
   bottom: 7%;
+}
 
+.seperator {
+  object-fit: contain;
 }
 
 /* services
@@ -293,6 +320,17 @@ header {
   margin-bottom: 40px;
 }
 
+.projectsInfo img {
+  width: 80%;
+}
+.namesPj {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+  /* margin: auto; */
+}
 
 /* whybinarify 
  */

@@ -19,8 +19,94 @@
   .courseIcon p {
     font-size: 12px
   }
+
   .courseIcon {
     padding: 10px;
     margin-right: 10px;
+  }
+
+  #BigMenu {
+    display: none !important;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .menuAside.active {
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background: #2d2d2d;
+    width: 40%;
+  }
+
+  .linksItem a {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .linksItem a.active::after {
+    display: none
+  }
+
+  .projectsLists {
+    text-align: center;
+  }
+
+  .contactCont .formInput {
+    width: 100%;
+  }
+
+  .projectsInfo img {
+    width: 80%;
+  }
+
+  .fixedTab {
+    width: 100%;
+    display: none !important;
+  }
+
+  .someDesign {
+    margin-left: 12%;
+  }
+
+  .services {
+    margin-top: 0;
+  }
+
+  .namesPj {
+    display: block;
+  }
+  .workdes {
+    font-size: 16px !important;
+    margin-top: 0.8rem;
+  }
+}
+
+@media(max-width: 1187px) {
+  .services .serviceCard {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media(max-width: 980px) {
+  .contact-us-big-moon {
+    display: none;
   }
 }

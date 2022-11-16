@@ -66,3 +66,21 @@ function onScroll(event) {
     }
   });
 }
+
+const hamburgerC = document.querySelector(".hamburger");
+const courseAside = document.querySelector("#menuAside")
+
+hamburgerC.addEventListener("click", mobileMenuC);
+
+function mobileMenuC() {
+  hamburgerC.classList.toggle("active");
+  courseAside.classList.toggle("active");
+
+}
+
+$(".linItmem").on('click', function () {
+  // remove classname 'active' from all li who already has classname 'active'
+  $(".linItmem.active").removeClass("active");
+  // adding classname 'active' to current click li 
+  $(this).addClass("active");
+});
